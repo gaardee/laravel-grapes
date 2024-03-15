@@ -2,7 +2,7 @@
 
 namespace MSA\LaravelGrapes\Services;
 
-use simplehtmldom\HtmlDocument;
+use HungCP\PhpSimpleHtmlDom\HtmlDomParser;
 
 class GenerateFrontEndService {
 
@@ -255,9 +255,7 @@ class GenerateFrontEndService {
 
     protected function htmlInitialization($html_string, $slug)
     {
-        $html = new HtmlDocument();
-
-        $html->load($html_string);
+        $html = HtmlDomParser::str_get_html($html_string);
 
         $text_blocks = $html->find('text');
 

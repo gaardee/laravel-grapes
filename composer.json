@@ -12,11 +12,11 @@
     ],
     "require": {
         "tightenco/ziggy": "*",
-        "simplehtmldom/simplehtmldom": "*"
+        "caophihung94/php-simple-html-dom-parser": "*"
     },
     "autoload": {
         "psr-4": {
-          "MSA\\LaravelGrapes\\": "src"
+            "MSA\\LaravelGrapes\\": "src"
         }
     },
     "extra": {
